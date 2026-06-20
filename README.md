@@ -12,6 +12,4 @@ I hope you enjoy and figure out how to run the server I don't know use AI or som
 
 Potion Out :3 (fuck you mag, danwildfire, and most of all mathie for making the cheating meownet shit worst)
 
-<img width="220" height="216" alt="ezgif com-effects" src="https://github.com/user-attachments/assets/4f8343ef-6b73-41cb-aa2c-8af6cf84eddb" />
-
-
+![demo](https://github.com/user-attachments/assets/4f8343ef-6b73-41cb-aa2c-8af6cf84eddb)
