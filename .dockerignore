@@ -1,0 +1,12 @@
+.git
+.env
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+tmp/
+slop.exe
+main.go.bak
+.air.toml
+README.md

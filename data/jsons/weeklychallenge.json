@@ -1,0 +1,11 @@
+﻿{
+   "ChallengeMapId":1,
+   "CompletedRequired":false,
+   "StartAt":"2026-03-25T21:00:00",
+   "EndAt":"2027-04-01T21:00:00",
+   "ServerTime":"2026-03-31T14:42:54.2754728Z",
+   "Challenges":[],
+   "Gift":null,
+   "FallbackGiftName":"",
+   "ChallengeThemeString":"\"no weekly's at this time.\""
+}

@@ -1,0 +1,6 @@
+@MeowNet.API_HostAddress = http://localhost:5070
+
+GET {{MeowNet.API_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

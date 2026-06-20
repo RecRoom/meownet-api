@@ -1,0 +1,137 @@
+package models
+
+import "time"
+
+type GiftContext int
+
+const (
+	GiftContextNone                            GiftContext = -1
+	GiftContextDefault                         GiftContext = 0
+	GiftContextFirstActivity                   GiftContext = 1
+	GiftContextGameDrop                        GiftContext = 2
+	GiftContextAllDailyChallengesComplete      GiftContext = 3
+	GiftContextAllWeeklyChallengeComplete      GiftContext = 4
+	GiftContextDailyChallengeComplete          GiftContext = 5
+	GiftContextWeeklyChallengeComplete         GiftContext = 6
+	GiftContextUnassignedEquipment             GiftContext = 10
+	GiftContextUnassignedAvatar                GiftContext = 11
+	GiftContextUnassignedConsumable            GiftContext = 12
+	GiftContextReacquisition                   GiftContext = 20
+	GiftContextMembership                      GiftContext = 21
+	GiftContextNUXTokensAndDressUp             GiftContext = 30
+	GiftContextNUXExperiment1                  GiftContext = 31
+	GiftContextNUXExperiment2                  GiftContext = 32
+	GiftContextNUXExperiment3                  GiftContext = 33
+	GiftContextNUXExperiment4                  GiftContext = 34
+	GiftContextNUXExperiment5                  GiftContext = 35
+	GiftContextGameRewards                     GiftContext = 50
+	GiftContextGameRewardsTokens               GiftContext = 51
+	GiftContextLevelUp                         GiftContext = 100
+	GiftContextPurchasedGiftA                  GiftContext = 500
+	GiftContextPurchasedGiftB                  GiftContext = 501
+	GiftContextPurchasedGiftC                  GiftContext = 502
+	GiftContextPurchasedGiftD                  GiftContext = 503
+	GiftContextHoliday                         GiftContext = 1000
+	GiftContextContest                         GiftContext = 1001
+	GiftContextPromotion                       GiftContext = 1002
+	GiftContextSubscribersOnly                 GiftContext = 1003
+	GiftContextDeprecated                      GiftContext = 1100
+	GiftContextRecRoyale                       GiftContext = 1200
+	GiftContextDeprecatedPaintballClearCut     GiftContext = 2000
+	GiftContextDeprecatedPaintballHomestead    GiftContext = 2001
+	GiftContextDeprecatedPaintballQuarry       GiftContext = 2002
+	GiftContextDeprecatedPaintballRiver        GiftContext = 2003
+	GiftContextDeprecatedPaintballDam          GiftContext = 2004
+	GiftContextDeprecatedPaintballDriveIn      GiftContext = 2005
+	GiftContextPaintballClearCut               GiftContext = 2010
+	GiftContextPaintballHomestead              GiftContext = 2011
+	GiftContextPaintballQuarry                 GiftContext = 2012
+	GiftContextPaintballRiver                  GiftContext = 2013
+	GiftContextPaintballDam                    GiftContext = 2014
+	GiftContextPaintballDriveIn                GiftContext = 2015
+	GiftContextDeprecatedDiscgolfPropulsion    GiftContext = 3000
+	GiftContextDeprecatedDiscgolfLake          GiftContext = 3001
+	GiftContextDiscgolfPropulsion              GiftContext = 3010
+	GiftContextDiscgolfLake                    GiftContext = 3011
+	GiftContextDiscgolfModeCoopCatch           GiftContext = 3500
+	GiftContextQuestGoblinA                    GiftContext = 4000
+	GiftContextQuestGoblinB                    GiftContext = 4001
+	GiftContextQuestGoblinC                    GiftContext = 4002
+	GiftContextQuestGoblinS                    GiftContext = 4003
+	GiftContextQuestGoblinConsumable           GiftContext = 4004
+	GiftContextQuestCauldronA                  GiftContext = 4010
+	GiftContextQuestCauldronB                  GiftContext = 4011
+	GiftContextQuestCauldronC                  GiftContext = 4012
+	GiftContextQuestCauldronS                  GiftContext = 4013
+	GiftContextQuestCauldronConsumable         GiftContext = 4014
+	GiftContextQuestPirate1A                   GiftContext = 4100
+	GiftContextQuestPirate1B                   GiftContext = 4101
+	GiftContextQuestPirate1C                   GiftContext = 4102
+	GiftContextQuestPirate1S                   GiftContext = 4103
+	GiftContextQuestPirate1X                   GiftContext = 4104
+	GiftContextQuestPirate1Consumable          GiftContext = 4105
+	GiftContextQuestDracula1A                  GiftContext = 4200
+	GiftContextQuestDracula1B                  GiftContext = 4201
+	GiftContextQuestDracula1C                  GiftContext = 4202
+	GiftContextQuestDracula1S                  GiftContext = 4203
+	GiftContextQuestDracula1X                  GiftContext = 4204
+	GiftContextQuestDracula1Consumable         GiftContext = 4205
+	GiftContextQuestDracula1SS                 GiftContext = 4206
+	GiftContextQuestSciFiA                     GiftContext = 4500
+	GiftContextQuestSciFiB                     GiftContext = 4501
+	GiftContextQuestSciFiC                     GiftContext = 4502
+	GiftContextQuestSciFiS                     GiftContext = 4503
+	GiftContextQuestSciFiConsumable            GiftContext = 4504
+	GiftContextDeprecatedCharades              GiftContext = 5000
+	GiftContextCharades                        GiftContext = 5001
+	GiftContextDeprecatedSoccer                GiftContext = 6000
+	GiftContextSoccer                          GiftContext = 6001
+	GiftContextDeprecatedPaddleball            GiftContext = 7000
+	GiftContextPaddleball                      GiftContext = 7001
+	GiftContextDeprecatedDodgeball             GiftContext = 8000
+	GiftContextDodgeball                       GiftContext = 8001
+	GiftContextDeprecatedLasertag              GiftContext = 9000
+	GiftContextLasertag                        GiftContext = 9001
+	GiftContextDeprecatedBowling               GiftContext = 10000
+	GiftContextBowling                         GiftContext = 10001
+	GiftContextStuntRunnerTheMainEventA        GiftContext = 11000
+	GiftContextStuntRunnerTheMainEventB        GiftContext = 11001
+	GiftContextStuntRunnerTheMainEventC        GiftContext = 11002
+	GiftContextStuntRunnerTheMainEventD        GiftContext = 11003
+	GiftContextStuntRunnerTheMainEventS        GiftContext = 11004
+	GiftContextStuntRunnerTheMainEventX        GiftContext = 11005
+	GiftContextStuntRunnerTheMainEventConsumable GiftContext = 11006
+	GiftContextStuntRunnerTheMainEventSS       GiftContext = 11007
+	GiftContextStoreLaserTag                   GiftContext = 100000
+	GiftContextStoreRecCenter                  GiftContext = 100010
+	GiftContextConsumable                      GiftContext = 110000
+	GiftContextToken                           GiftContext = 110100
+	GiftContextPunchcardChallengeComplete      GiftContext = 110200
+	GiftContextAllPunchcardChallengesComplete  GiftContext = 110201
+	GiftContextCommercePurchase                GiftContext = 200000
+)
+
+type Gift struct {
+	ID                        uint      `gorm:"primaryKey;column:id" json:"Id"`
+	AccountID                 uint      `gorm:"column:account_id;index" json:"-"`
+	FromPlayerId              uint      `gorm:"column:from_player_id" json:"FromPlayerId"`
+	Message                   string    `gorm:"column:message" json:"Message"`
+	AvatarItemDesc            string    `gorm:"column:avatar_item_desc" json:"AvatarItemDesc"`
+	AvatarItemType            int       `gorm:"column:avatar_item_type" json:"AvatarItemType"`
+	ConsumableItemDesc        string    `gorm:"column:consumable_item_desc" json:"ConsumableItemDesc"`
+	EquipmentPrefabName       string    `gorm:"column:equipment_prefab_name" json:"EquipmentPrefabName"`
+	EquipmentModificationGuid string    `gorm:"column:equipment_modification_guid" json:"EquipmentModificationGuid"`
+	Currency                  int       `gorm:"column:currency" json:"Currency"`
+	CurrencyType              int       `gorm:"column:currency_type" json:"CurrencyType"`
+	BalanceType               int       `gorm:"column:balance_type;default:-2" json:"BalanceType"`
+	Level                     int       `gorm:"column:level" json:"Level"`
+	Xp                        int       `gorm:"column:xp" json:"Xp"`
+	GiftContext               int       `gorm:"column:gift_context" json:"GiftContext"`
+	GiftRarity                int       `gorm:"column:gift_rarity" json:"GiftRarity"`
+	Platform                  int       `gorm:"column:platform;default:-1" json:"Platform"`
+	PlatformsToSpawnOn        int       `gorm:"column:platforms_to_spawn_on;default:-1" json:"PlatformsToSpawnOn"`
+	Consumed                  bool      `gorm:"column:consumed;default:false;index" json:"-"`
+	CreatedAt                 time.Time `gorm:"column:created_at;autoCreateTime" json:"-"`
+}
+
+func (Gift) TableName() string { return "gifts" }

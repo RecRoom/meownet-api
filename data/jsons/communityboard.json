@@ -1,0 +1,28 @@
+{
+    "FeaturedPlayer": {
+      "Id": 1,
+      "TitleOverride": "The Goat",
+      "UrlOverride": "https://discord.gg/recnet"
+    },
+    "FeaturedRoomGroup": {
+      "FeaturedRoomGroupId": 2,
+      "Name": "Featured Rooms",
+      "Rooms": [
+        
+      ]
+    },
+    "CurrentAnnouncement": {
+      "Message": "rising.net (Development Server)",
+      "MoreInfoUrl": "https://discord.gg/recnet"
+    },
+    "InstagramImages": [],
+    "Videos": [
+    {
+      "BlobName": "",
+      "Title": "Rec Room - The Rec Room Show - Episode 1",
+      "Description": "The Rec Room Show is a new series where we talk about all things Rec Room! In this episode, we discuss the latest news and updates, including the launch of our new website and the upcoming release of our next big update. We also share some tips and tricks for getting the most out of your Rec Room experience. Tune in to stay up-to-date on everything happening in Rec Room!",
+      "ThumbnailBlobName": "1",
+      "SourceUrl": "https://www.youtube.com/watch?v=-7cLPSXGlJ8" 
+    }
+  ]
+} 
