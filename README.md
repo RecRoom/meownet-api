@@ -12,4 +12,6 @@ I hope you enjoy and figure out how to run the server I don't know use AI or som
 
 Potion Out :3 (fuck you mag, danwildfire, and most of all mathie for making the cheating meownet shit worst)
 
+NEW DISCOVERY UNLOCKED WE FOUND THE MEOWNET ADMIN PANEL UNDER A DOMAIN SERIOUSLY GUYS I TOLD U MAKE IT A  FUCKING SEPARATE DOMAIN FROM THE ACTUAL DOMAIN GOD U ALL ARE FUCKING RETARDED: https://admin.meowii.app/login
+
 ![demo](https://github.com/user-attachments/assets/4f8343ef-6b73-41cb-aa2c-8af6cf84eddb)
