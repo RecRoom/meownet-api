@@ -10,7 +10,7 @@ The Development Team was such a mess man it was insanely terrible like the whole
 
 I hope you enjoy and figure out how to run the server I don't know use AI or something to replace CDN and also the Database.
 
-Potion Out :3 (fuck you mag, danwildfire, and most of all mathie for making the cheating meownet shit worst)
+Potion Out :3 (fuck you mag, and most of all mathie for making the cheating meownet shit worst)
 
 NEW DISCOVERY UNLOCKED WE FOUND THE MEOWNET ADMIN PANEL UNDER A DOMAIN SERIOUSLY GUYS I TOLD U MAKE IT A  FUCKING SEPARATE DOMAIN FROM THE ACTUAL DOMAIN GOD U ALL ARE FUCKING RETARDED: https://admin.meowii.app/login
 
